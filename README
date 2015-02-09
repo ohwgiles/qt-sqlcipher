@@ -1,0 +1,18 @@
+qt-sqlcipher
+
+builds sqlcipher a qsqldriver.
+
+shamelessly borrowed from https://github.com/sijk/qt5-sqlcipher, the difference here is
+
+- couple of qt source files are copied in so the whole qt repo doesn't have to be cloned
+- assumes qt and sqlcipher libs/headers already installed
+
+
+on Arch:
+
+yaourt -S sqlcipher
+cd path/to/build
+qmake path/to/source
+make
+sudo make install
+
